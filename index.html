@@ -100,6 +100,11 @@ h2{font-size:clamp(24px,3.2vw,32px);color:var(--navy);font-weight:800;letter-spa
 .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px}
 .ph{border:2px dashed #B9CBD9;border-radius:14px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);font-size:14px;background:#fff;text-align:center;padding:12px}
 .ph b{color:var(--navy);margin-bottom:4px}
+.baf{position:relative;margin:0}
+.baf img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;display:block}
+.baf figcaption{position:absolute;top:12px;left:12px;background:var(--navy);color:#fff;font-weight:800;font-size:13px;letter-spacing:1.2px;border-radius:50px;padding:5px 15px}
+.baf.good figcaption{background:var(--mint);color:var(--navy)}
+.ilus{margin-top:10px;font-size:12.5px;color:#9AA7B4}
 .ba p.note{margin-top:22px;font-size:15.5px;max-width:640px}
 
 /* ---- club ---- */
@@ -229,7 +234,12 @@ footer .tag{color:var(--mint);font-size:13px;display:block;margin:2px 0 14px}
 <section class="ba">
   <div class="wrap">
     <h2>Esto es lo que respira tu familia</h2>
-    <p class="note" style="margin-top:0">Un minisplit sin mantenimiento acumula polvo, moho y bacterias — y consume hasta <b>30% más luz</b>. Por eso recomendamos un mantenimiento profundo cada 6 meses: tu equipo enfría mejor, gasta menos y tu familia respira aire limpio.</p>
+    <div class="ba-grid">
+      <figure class="baf"><img src="antes.jpg" alt="Minisplit antes del mantenimiento: serpentín y turbina cubiertos de polvo y pelusa" loading="lazy"><figcaption>ANTES</figcaption></figure>
+      <figure class="baf good"><img src="despues.jpg" alt="Minisplit después del mantenimiento profundo: serpentín y turbina impecables" loading="lazy"><figcaption>DESPUÉS</figcaption></figure>
+    </div>
+    <p class="note">Un minisplit sin mantenimiento acumula polvo, moho y bacterias — y consume hasta <b>30% más luz</b>. Recomendamos un mantenimiento profundo cada 6 meses.</p>
+    <p class="ilus">Imágenes ilustrativas</p>
   </div>
 </section>
 
