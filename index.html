@@ -105,6 +105,13 @@ h2{font-size:clamp(24px,3.2vw,32px);color:var(--navy);font-weight:800;letter-spa
 .baf figcaption{position:absolute;top:12px;left:12px;background:var(--navy);color:#fff;font-weight:800;font-size:13px;letter-spacing:1.2px;border-radius:50px;padding:5px 15px}
 .baf.good figcaption{background:var(--mint);color:var(--navy)}
 .ilus{margin-top:10px;font-size:12.5px;color:#9AA7B4}
+
+/* ---- ahorro ---- */
+.sav{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:8px}
+.sav .s{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 22px}
+.sav svg{width:36px;height:36px;stroke:var(--mint-ink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px}
+.sav b{color:var(--navy);display:block;margin-bottom:6px;font-size:16.5px}
+.sav p{font-size:14.5px;color:var(--muted)}
 .ba p.note{margin-top:22px;font-size:15.5px;max-width:640px}
 
 /* ---- club ---- */
@@ -142,6 +149,7 @@ footer .tag{color:var(--mint);font-size:13px;display:block;margin:2px 0 14px}
   section{padding:48px 0}
   .trust .wrap{grid-template-columns:1fr 1fr;gap:12px}
   .steps,.tiers,.ba-grid{grid-template-columns:1fr}
+  .sav{grid-template-columns:1fr 1fr}
   .tier .pill{font-size:11.5px}
   .nav .btn{display:none}
   body{padding-bottom:74px}
@@ -150,6 +158,7 @@ footer .tag{color:var(--mint);font-size:13px;display:block;margin:2px 0 14px}
 @media(max-width:480px){
   .trust .wrap{grid-template-columns:1fr;gap:10px}
   .hero .ctas .btn{width:100%;justify-content:center}
+  .sav{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -238,8 +247,37 @@ footer .tag{color:var(--mint);font-size:13px;display:block;margin:2px 0 14px}
       <figure class="baf"><img src="antes.jpg" alt="Minisplit antes del mantenimiento: serpentín y turbina cubiertos de polvo y pelusa" loading="lazy"><figcaption>ANTES</figcaption></figure>
       <figure class="baf good"><img src="despues.jpg" alt="Minisplit después del mantenimiento profundo: serpentín y turbina impecables" loading="lazy"><figcaption>DESPUÉS</figcaption></figure>
     </div>
-    <p class="note">Un minisplit sin mantenimiento acumula polvo, moho y bacterias — y consume hasta <b>30% más luz</b>. Recomendamos un mantenimiento profundo cada 6 meses.</p>
+    <p class="note">Un minisplit sin mantenimiento acumula polvo, moho y bacterias que terminan en el aire de tu casa. Recomendamos un mantenimiento profundo cada 6 meses.</p>
     <p class="ilus">Imágenes ilustrativas</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>El mantenimiento se paga solo</h2>
+    <p class="lead">En verano, el aire acondicionado es el que manda en tu recibo de CFE. Un equipo limpio trabaja menos — y eso se nota cada bimestre.</p>
+    <div class="sav">
+      <div class="s">
+        <svg viewBox="0 0 24 24"><path d="M13 2 5.5 13.5 H11 L9.5 22 17.5 10 H12 Z"/></svg>
+        <b>Hasta 30% menos consumo</b>
+        <p>El polvo en el serpentín obliga al equipo a trabajar de más para enfriar lo mismo. Limpio, hace el mismo frío con menos luz.</p>
+      </div>
+      <div class="s">
+        <svg viewBox="0 0 24 24"><path d="M12 3 v11"/><circle cx="12" cy="18" r="3.5"/><path d="M8.5 6.5 h3 M8.5 10 h3"/></svg>
+        <b>Enfría más rápido</b>
+        <p>Alcanza la temperatura que quieres en menos tiempo, y el compresor descansa más horas al día.</p>
+      </div>
+      <div class="s">
+        <svg viewBox="0 0 24 24"><path d="M6 2.5 h12 V19 l-2 2 -2-2 -2 2 -2-2 -2 2 -2-2 Z"/><path d="M9.5 8 h5 M9.5 12 h5"/></svg>
+        <b>Protege tu tarifa de CFE</b>
+        <p>Un consumo disparado en verano te puede brincar a la tarifa DAC, la cara. Equipos eficientes ayudan a librarla.</p>
+      </div>
+      <div class="s">
+        <svg viewBox="0 0 24 24"><path d="M12 20.5 C7 16.5 3.5 13.5 3.5 9.5 A4.5 4.5 0 0 1 12 6.5 A4.5 4.5 0 0 1 20.5 9.5 C20.5 13.5 17 16.5 12 20.5 Z"/><path d="M6.5 12 h3 l1.5-2.5 2 4 1.5-2.5 h3"/></svg>
+        <b>Alarga la vida del equipo</b>
+        <p>Un compresor forzado se muere años antes. Cada mantenimiento pospone una compra de $15,000 o más.</p>
+      </div>
+    </div>
   </div>
 </section>
 
